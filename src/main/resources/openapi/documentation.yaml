@@ -1,0 +1,20 @@
+openapi: "3.0.3"
+info:
+  title: "Flowalora API"
+  description: "Regl Takip Uygulaması Backend API Dokümantasyonu"
+  version: "1.0.0"
+servers:
+  - url: "http://localhost:8080"
+paths:
+  /auth/register:
+    post:
+      summary: "Yeni kullanıcı kaydı"
+      responses:
+        '201':
+          description: "Başarıyla oluşturuldu"
+  /auth/login:
+    post:
+      summary: "Kullanıcı girişi"
+      responses:
+        '200':
+          description: "Başarılı giriş, token döner"
